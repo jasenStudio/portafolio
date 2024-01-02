@@ -1,0 +1,19 @@
+.fixed-navBarMovil {
+  position: fixed;
+  transition: 0.2s linear;
+  top: 0px;
+}
+
+
+main {
+
+  margin: 0px auto;
+  width: 100%;
+  max-width: 1600px;
+  min-height: 100vh;
+}
+.fillHeight {
+  padding: 0px 150px;
+}
+
+

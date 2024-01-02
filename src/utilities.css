@@ -1,0 +1,20 @@
+/* Content */
+
+.pd-estandar {
+  padding: 0 25px;
+}
+
+
+/* Borders */
+
+.border-sidebar {
+  border-bottom: 2px solid #3b2d7a;
+    padding-bottom: 15px;
+}
+
+
+/* backgrounds */
+
+.bg-default {
+  background-color: var(--main-bg-color);
+}

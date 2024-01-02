@@ -1,0 +1,62 @@
+<ng-template #navBarMovil>
+  <shared-nav-bar-movil
+  (toggleWasClicked)="buttonMenuWasClicked($event)"
+  class="z-10"
+  (scroll)="onscroll()" [ngClass]="navbarfixed() ? 'fixed-navBarMovil w-full' : '' " />
+</ng-template>
+
+<shared-navbar *ngIf="navBar(); else navBarMovil"></shared-navbar>
+<main class="container fillHeight">
+
+
+
+  <div #single id="single" style=" scroll-behavior: smooth;">
+
+   <section-greeting
+   data-aos="fade-down"
+   data-aos-duration="800"
+   data-aos-easing="ease-in-out"
+   data-aos-once="true"></section-greeting>
+    <section-about-me
+    id="about"
+    data-aos="fade-down"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+></section-about-me>
+    <section-jobs
+    id="experience"
+    data-aos="fade-down"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+></section-jobs>
+    <section-projects id="work"
+    data-aos="fade-down"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"></section-projects>
+    <section-contacts id="contact"
+    data-aos="fade-down"
+    data-aos-duration="800"
+    data-aos-easing="ease-in-out"
+    data-aos-once="true"
+
+    ></section-contacts>
+  </div>
+
+  <!-- <p #single>1999 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, cupiditate, voluptatem quaerat architecto exercitationem unde fuga blanditiis nisi suscipit quo vitae reprehenderit quos. Illum a nobis maxime quam animi dolore?</p>
+  <p #single>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, cupiditate, voluptatem quaerat architecto exercitationem unde fuga blanditiis nisi suscipit quo vitae reprehenderit quos. Illum a nobis maxime quam animi dolore?</p> -->
+
+</main>
+
+
+
+  <footer *ngIf="footer()" class="w-full">
+
+
+<shared-footer></shared-footer>
+   </footer>
+
+
+

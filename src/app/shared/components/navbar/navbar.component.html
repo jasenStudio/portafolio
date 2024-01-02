@@ -1,0 +1,35 @@
+<nav class="flex flex-row w-full px-14 sm:px-4 md:px-14 items-center sm:text-sm md:text-base">
+
+  <div class="basis-1/4">
+    <img src="/assets/images/logo.png" alt="logo" width="75" height="75">
+   </div>
+    <div class="flex basis-3/4 justify-end">
+      <ul class="flex">
+        <li *ngFor="let link of links(); let i = index" class="p-3 sm:p-1 md:p-3 sm:flex sm:flex-row sm:items-center ">
+          <a
+          [id]="'section-' + link.value"
+          (click)="navigateToSection(link.url,link.value)"
+           >
+            <span class="mr-1 sm:mr-0 md:mr-1 text-indigo-400 "> 0{{i+1}}. </span>
+            {{ link.value | ChangeLanguage}}
+          </a>
+        </li>
+      </ul>
+
+
+      <div class="display__inherit" style="transition-delay: 400ms;">
+        <a href="/assets/CV-JSE.pdf"
+        target="_blank"
+        id="resume"
+        class="outline-2 border-2 rounded py-3 px-4 ml-4 text-indigo-400 border-indigo-400" #resume>
+        Resume
+        </a>
+      </div>
+    </div>
+
+
+</nav>
+
+
+
+
