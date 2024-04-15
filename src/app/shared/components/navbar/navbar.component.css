@@ -1,0 +1,33 @@
+nav {
+  height: 100px;
+}
+
+
+.display__inherit {
+  display: inherit;
+}
+
+ li a{
+  color: var(--text-color);
+  font-family: 'Inconsolata', monospace;
+  cursor: pointer !important;
+}
+
+ li a:hover{
+  @apply text-indigo-400 ;
+}
+
+.a-active {
+  color: rgb(129,140,248) !important;
+}
+
+#resume{
+  font-family: 'Inconsolata', monospace;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
+#resume:hover{
+  outline: none;
+  box-shadow: 3px 3px 0 0 rgb(129 140 248 / var(--tw-text-opacity));;
+  transform: translate(-4px, -4px);
+}

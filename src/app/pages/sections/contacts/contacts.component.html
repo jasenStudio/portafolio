@@ -1,0 +1,87 @@
+<section>
+
+
+
+  <div>
+
+
+    <div class="contact-section">
+
+      <div class="text-center w-full">
+        <h3 class="font-bold text-indigo-400"> <span>04. </span> ¿Que sigue?</h3>
+        <H2 class="font-bold text-indigo-400">Ponernos en contacto</H2>
+        <p>
+          Actualmente estoy buscando nuevas oportunidades, mi bandeja de entrada siempre está abierta. Si tienes alguna pregunta o simplemente quieres saludar, ¡haré todo lo posible para responderte!
+        </p>
+
+        <form [formGroup]="formContact" (ngSubmit)="onSubmit()"
+        id="login_form" style="margin-top: 12px;"
+        class="flex flex-col text-start mt-12 sm:w-72 md:w-80 lg:w-96 mx-auto">
+
+          <label class="text-sm font-medium">Nombres</label>
+          <input class="mb-3 px-2 pt-1
+          mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+          focus:outline-none
+          focus:border-sky-500
+          focus:ring-1
+          focus:ring-sky-500
+          focus:invalid:border-red-500 focus:invalid:ring-red-500 text-black"
+          type="text"
+          formControlName="fullname"
+          placeholder="John Doe">
+
+          <span
+          *ngIf="isValidField('fullname')"
+          class="text-xs text-red-500 mb-1 mt-1">
+           {{getFieldError('fullname')}}
+    </span>
+
+
+          <label class="text-sm font-medium">Correo Electronico</label>
+          <input class="mb-3 px-2
+          mb-3 mt-1 block w-full px-2 py-1.5 border border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+          focus:outline-none
+          focus:border-sky-500
+          focus:ring-1
+          focus:ring-sky-500
+          focus:invalid:border-red-500 focus:invalid:ring-red-500 text-black"
+          type="email" formControlName="email"
+          placeholder="johnDoe@gmail.com">
+
+
+
+
+          <label class="text-sm font-medium">Mensajes</label>
+          <textarea
+          rows="10"
+          class="mb-3 mt-1 block w-full px-2  border
+        border-gray-300 rounded-md text-sm shadow-sm placeholder-gray-400
+          focus:outline-none
+          focus:border-sky-500
+          focus:ring-1
+          focus:ring-sky-500
+          focus:invalid:border-red-500 focus:invalid:ring-red-500 text-black"
+          placeholder="Escribe algo !!"
+           formControlName="messages"
+           ></textarea>
+           <span
+           *ngIf="isValidField('messages')"
+           class="text-xs text-red-500 mb-1 mt-1">
+            {{getFieldError('fullname')}}
+     </span>
+
+          <button class="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-pink-600 to-red-600 font-medium text-gray-100 block transition duration-300" type="submit">
+
+            <span id="login_default_state">Enviar</span>
+          </button>
+        </form>
+      </div>
+
+
+
+
+    </div>
+  </div>
+
+</section>
+

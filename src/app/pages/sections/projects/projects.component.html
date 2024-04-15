@@ -1,0 +1,30 @@
+<section>
+
+
+
+  <div>
+
+
+    <div class="project-section sm:items-center md:items-center">
+
+      <div class="w-full flex flex-row justify-start">
+        <h2 class="font-bold text-indigo-400">Algunos proyectos</h2>
+      </div>
+
+      <div
+          class="grid justify-items-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4 ">
+
+
+
+      <project-card-project *ngFor="let repo of _repositorios;" [repositorio]="repo">
+
+      </project-card-project>
+
+        <!-- <app-card-project [repositorio]="_repositorios" ></app-card-project> -->
+      </div>
+
+
+    </div>
+  </div>
+
+</section>

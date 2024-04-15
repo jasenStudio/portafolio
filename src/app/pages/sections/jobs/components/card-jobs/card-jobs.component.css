@@ -1,0 +1,55 @@
+.bg-color-card {
+  background-color: var(--main-bg-color);
+}
+
+.max-w-sm {
+  width: 28rem;
+  max-width: 28rem !important;
+}
+
+
+ul.list-skills {
+  display: grid;
+
+        gap: 0px 10px;
+        padding: 0px;
+        margin: 20px 0px 0px;
+        overflow: hidden;
+        list-style: none;
+}
+
+ul.list-skills li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: var(--fz-xs);
+
+}
+
+
+li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color:rgb(129 140 248 / 1 );
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: rgb(129 140 248 /1);
+}
+
+.padding-card-job{
+  padding: 1.5rem ;
+}

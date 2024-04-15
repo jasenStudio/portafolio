@@ -1,0 +1,122 @@
+
+
+@media (max-width:428px) and (orientation:portrait){
+
+  main{
+    padding: 0 25px !important;
+  }
+
+main  .greeting{
+    padding-top: 20px !important;
+  }
+
+  main .fillHeight{
+    padding: 0 30px !important;
+  }
+
+
+  .greeting {
+    min-height: 70vh !important;
+  height: 70vh !important;
+  }
+
+  /* NavBar Horizontal*/
+
+  .nav-item {
+    flex-direction: row;
+    align-items: center;
+    margin: 0 3px;
+  }
+/*...*/
+
+/* Card Jobs*/
+
+.max-w-sm{
+   width: 20rem !important;
+}
+
+.jobs-section h2::after {
+   width: 100px !important;
+}
+
+
+.padding-card-job {
+  padding:1rem !important;
+}
+
+
+
+/* Section projects */
+
+.project-section h2::after {
+  width: 100px !important;
+}
+
+
+  /* About me*/
+
+  .mt-img-6{
+   margin-top:15px !important;
+  }
+
+}
+
+@media (max-width: 575.98px) {
+
+
+    .pd-estandar {
+      padding: 0 30px;
+    }
+
+    .jobs-section h2::after {
+      width: 100px !important;
+   }
+
+   .project-section h2::after {
+    width: 100px !important;
+  }
+
+
+  .mt-img-6{
+    margin-top:15px !important;
+   }
+
+   /*Card Jobs*/
+
+   .max-w-sm{
+    width: 20rem !important;
+  }
+}
+
+
+
+
+
+@media (max-width: 767.98px) {
+  .fillHeight{
+    padding: 0 30px !important;
+  }
+ }
+
+
+@media (max-width: 991.98px) {
+
+  main .greeting{
+    padding-top: 100px;
+
+  }
+
+  .fillHeight{
+    padding-top: 0 45px !important;
+  }
+
+
+ }
+
+
+@media (max-width: 1199.98px) {  }
+
+
+@media (max-width: 1399.98px) {  }
+
+

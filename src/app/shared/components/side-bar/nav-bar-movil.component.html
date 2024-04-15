@@ -1,0 +1,43 @@
+<div class="w-full grid grid-cols-2 p-4 bg-default"
+     style="z-index: 4; position: fixed;" [ngClass]="{ 'bg-panel border-0 grid-template-movil': activeNavBar }">
+  <div >
+    <img src="/assets/images/logo.png" alt="logo" width="50" height="50">
+  </div>
+  <div>
+    <shared-button-hamburger class="float-right btn-h" (click)="toggleNavBar($event)" #hambuguer />
+  </div>
+</div>
+
+<!-- TODO MEJORAR SIDEBAR-->
+
+<div class='sidebar hide' style="z-index: 3; position: fixed;">
+
+
+  <div  style="position: relative; top: 30%;">
+    <ul #ulLink class="text-center"  >
+      <li *ngFor="let link of links(); let i = index" class="p-3">
+        <a
+        class="txt-menu"
+        [id]="'section-' + link.value"
+        (click)="navigateToSection(link.url,link.value)"
+        >
+         <span class="text-indigo-400" style="display: block;">
+          0{{i + 1}}.
+         </span>
+          {{ link.value | ChangeLanguage }}
+        </a>
+      </li>
+
+      <li>
+        <div class="display__inherit p-3 pt-7 mt-4" style="transition-delay: 400ms;">
+          <a href="/assets/CV-JSE.pdf" target="_blank" style="margin: 15% auto 0px;"
+          class="resume-link outline-2 border-2 rounded py-3 px-12 text-indigo-400 border-indigo-400" #resume>
+          Resume
+          </a>
+        </div>
+      </li>
+
+    </ul>
+  </div>
+
+</div>
